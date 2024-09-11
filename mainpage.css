@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}.obox{
+    border: solid 1px;
+    height: 150px;
+
+    display: flex;
+
+}
+#inbox1,#inbox2{
+    border: solid 1px;
+    height: 150px;
+
+}
+#inbox1{
+    width: 150px;
+
+
+}
+#inbox2{
+    width: 1400px;
+    text-align: center;
+}
+#clgname{
+    font-size: 53px;
+    color: rgb(237, 5, 5);
+}
+#scrollclg{
+    font-size: 20px;
+    font-weight: bold;
+
+    color: blue;
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 165px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    background-color: #11d1eb;
+    margin-right: 1px;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: red;
+}
+
+.outerbox{
+    border: solid 1px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#in1,#in2,#in3{
+
+    border: solid 1px;
+    height: 350px;
+    z-index: -1;
+}
+#in1{
+    width: 600px;
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 350px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(download.jpg);
+    }
+    20%{
+        background-image: url(download\ \(2\).jpg);
+    }
+    30%{
+        background-image: url(download\ \(3\).jpg);
+    }
+    40%{
+        background-image: url(download\ \(4\).jpg);
+    }
+    50%{
+        background-image: url(images\ \(1\).jpg);
+    }
+}
+#in2,#in3{
+    width: 280px;
+}
+#placebox{
+    border: solid;
+    height: 250px;
+}
+
